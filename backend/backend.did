@@ -1,0 +1,11 @@
+service : {
+  addStock: (text, nat) -> ();
+  getPortfolio: () -> (vec record {
+                             text;
+                             nat;
+                           }) query;
+  getPortfolioValue: () -> (float64) query;
+  removeStock: (text) -> ();
+  updateStockPrice: (text, float64) -> ();
+  updateStockQuantity: (text, nat) -> ();
+}
